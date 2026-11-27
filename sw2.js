@@ -1,5 +1,5 @@
 // Network-first: online hone par hamesha naya version, offline me saved version
-const CACHE = 'sharda-v14';
+const CACHE = 'sharda-v15';
 const FILES = ['./', './index.html', './manifest2.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
